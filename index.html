@@ -178,54 +178,14 @@
 
   .lede strong { font-weight: 600; color: var(--gold-pale); }
 
-  /* Service tags */
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    opacity: 0;
-    animation: rise 0.9s 0.5s ease forwards;
-  }
-
-  .tag {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding: 0.55rem 1.1rem;
-    border: 1px solid var(--line);
-    border-radius: 100px;
-    background: rgba(236, 212, 160, 0.025);
-    backdrop-filter: blur(4px);
-    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
-  }
-
-  .tag:hover {
-    transform: translateY(-3px);
-    border-color: var(--gold-glow);
-    background: rgba(236, 212, 160, 0.06);
-  }
-
-  .tag .led {
-    display: inline-block;
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    margin-right: 0.55rem;
-    vertical-align: middle;
-    background: var(--gold);
-    box-shadow: 0 0 8px var(--gold-glow);
-  }
-  .tag:nth-child(2) .led { background: var(--gold-pale); box-shadow: 0 0 8px var(--gold-pale); }
-  .tag:nth-child(3) .led { background: var(--gold-deep); box-shadow: 0 0 8px var(--gold-deep); }
-  .tag:nth-child(4) .led { background: var(--gold-pale); box-shadow: 0 0 8px var(--gold-pale); }
-
   /* Contact / CTA */
   .contact {
     display: flex;
     flex-wrap: wrap;
     gap: 0.9rem;
-    margin-top: 3rem;
+    margin-top: 0.6rem;
     opacity: 0;
-    animation: rise 0.9s 0.65s ease forwards;
+    animation: rise 0.9s 0.5s ease forwards;
   }
 
   .btn {
@@ -308,7 +268,7 @@
 
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
-    .eyebrow, h1, .lede, .tags, .contact { opacity: 1; }
+    .eyebrow, h1, .lede, .contact { opacity: 1; }
   }
 
   @media (max-width: 560px) {
@@ -334,13 +294,6 @@
         <strong>Lightbox84</strong> delivers lighting, sound, technical and electrical
         engineering for live entertainment. Designed, built and powered to perform.
       </p>
-
-      <div class="tags">
-        <span class="tag"><span class="led"></span>Lighting</span>
-        <span class="tag"><span class="led"></span>Sound</span>
-        <span class="tag"><span class="led"></span>Technical</span>
-        <span class="tag"><span class="led"></span>Electrical</span>
-      </div>
 
       <div class="contact">
         <a class="btn btn-primary" href="mailto:mark@lightbox84.com">
