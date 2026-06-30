@@ -4,12 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Lightbox84 | Engineering for Entertainment</title>
-<meta name="description" content="Lightbox84. Lighting, sound, technical and electrical engineering for live entertainment. Get in touch with mark@lightbox84.com." />
+<meta name="description" content="Lightbox84 delivers specialist engineering, education and entertainment services: technical production, testing and inspection, consultancy and leadership development for the entertainment and education sectors." />
 <meta name="theme-color" content="#08080a" />
 
 <!-- Open Graph -->
 <meta property="og:title" content="Lightbox84 | Engineering for Entertainment" />
-<meta property="og:description" content="Lighting · Sound · Technical · Electrical. Engineering that makes the show happen." />
+<meta property="og:description" content="Engineering · Education · Entertainment. Behind every great performance." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://lightbox84.com" />
 <meta property="og:image" content="assets/lb84-logo.png" />
@@ -146,8 +146,8 @@
   h1 {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 700;
-    font-size: clamp(3rem, 13vw, 8.5rem);
-    line-height: 0.92;
+    font-size: clamp(2.6rem, 10.5vw, 7rem);
+    line-height: 0.94;
     letter-spacing: -0.03em;
     margin-bottom: 1.6rem;
     opacity: 0;
@@ -168,15 +168,34 @@
   }
 
   .lede {
-    font-size: clamp(1.05rem, 2.6vw, 1.4rem);
-    color: var(--fg);
-    max-width: 36ch;
-    margin-bottom: 2.4rem;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    color: #cfcabf;
+    max-width: 58ch;
+    margin-bottom: 1.4rem;
     opacity: 0;
     animation: rise 0.9s 0.35s ease forwards;
   }
 
-  .lede strong { font-weight: 600; color: var(--gold-pale); }
+  .lede strong { font-weight: 600; color: var(--fg); }
+  .lede em {
+    font-style: normal;
+    font-weight: 600;
+    background: linear-gradient(105deg, var(--gold-pale), var(--gold) 60%, var(--gold-deep));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .closer {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--gold-pale);
+    margin-bottom: 2.4rem;
+    opacity: 0;
+    animation: rise 0.9s 0.45s ease forwards;
+  }
 
   /* Contact / CTA */
   .contact {
@@ -268,7 +287,7 @@
 
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
-    .eyebrow, h1, .lede, .contact { opacity: 1; }
+    .eyebrow, h1, .lede, .closer, .contact { opacity: 1; }
   }
 
   @media (max-width: 560px) {
@@ -288,21 +307,26 @@
     </header>
 
     <main class="hero">
-      <p class="eyebrow">Lighting · Sound · Technical · Electrical</p>
-      <h1>We make<br /><span class="grad">the show</span><br />happen.</h1>
+      <p class="eyebrow">Engineering · Education · Entertainment</p>
+      <h1>Behind Every<br />Great<br /><span class="grad">Performance.</span></h1>
       <p class="lede">
-        <strong>Lightbox84</strong> delivers lighting, sound, technical and electrical
-        engineering for live entertainment. Designed, built and powered to perform.
+        <strong>Lightbox84</strong> delivers specialist services. Engineering, teaching,
+        technical production and professional consultancy for the entertainment and
+        education sectors. Whether we're supporting a live production, testing or
+        inspecting critical systems, developing organisations and supporting leaders
+        deliver strategy, everything we do is driven by one principle:
+        <em>exceptional performance.</em>
       </p>
+      <p class="closer">Designed, built, powered to perform.</p>
 
       <div class="contact">
         <a class="btn btn-primary" href="mailto:mark@lightbox84.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
-          mark@lightbox84.com
+          Email us
         </a>
         <a class="btn btn-ghost" href="tel:+447708352202">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          07708 352202
+          Call us
         </a>
       </div>
     </main>
